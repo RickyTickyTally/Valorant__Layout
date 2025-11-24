@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Druk Wide'), url('DrukWideBold.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Druk Wide', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+.header__container {
+    max-width: 1600px;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px;
+    font-size: 14px;
+    background-color: #1F2326;
+    display: flex;
+    align-items: center;
+}
+
+.header__left-logo {
+    padding-right: 30px;
+    border-right: 2px solid #fff;
+}
+
+.header__left-logo--light {
+    padding-left: 30px;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__right-text {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.header__right-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav {
+    font-size: 12px;
+    margin-right: auto;
+    margin-left: 70px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
