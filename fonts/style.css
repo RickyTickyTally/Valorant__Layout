@@ -18,6 +18,15 @@ body {
     font-family: 'Druk Wide', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     margin: 0 auto;
     padding: 10px 40px;
@@ -32,6 +41,12 @@ body {
     background-color: #1F2326;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+}
+
+.header__left {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .header__left-logo {
@@ -53,6 +68,8 @@ body {
     font-weight: 700;
     font-size: 12px;
     padding-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .header__right-logo {
@@ -67,6 +84,7 @@ body {
     margin-left: 70px;
     display: flex;
     gap: 50px;
+    white-space: nowrap;
     justify-content: space-between;
     font-weight: 700;
 }
@@ -78,4 +96,126 @@ body {
 .nav__link:hover {
     text-decoration: underline;
     color: #fff;
+}
+
+@media (max-width: 1440px) {
+    .nav {
+        gap: 40px;
+    }
+    .header__right-text {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1360px) {
+    .nav {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .nav {
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .header__right-text {
+        font-size: 10px;
+    }
+}
+
+/*  Hero section  */
+
+
+.hero-section {
+    background: url("../images/bg2.jpg") center/cover no-repeat;
+}
+
+.hero {
+    margin-top: 120px;
+    display: flex;
+    
+}
+
+.hero__left {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.hero__left__title {
+    font-size: 110px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    writing-mode: vertical-rl;
+    padding-right: 120px;
+}
+
+.hero__left__logo {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    padding-right: 20px;
+    left: -5px;
+    bottom: -170px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.card {
+    background-color: #1F2326;
+    width: 440px;
+    height: 700px;
+    position: relative;
+}
+
+.card__image {
+    height: 700px;
+    width: 440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card__country {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF4656;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+}
+
+.card__name {
+    font-size: 50px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.card__abilities {
+    background-color: #1F2326;
+    width: 440px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    right: -25px;
+}
+
+.card__abilities-img {
+    width: 57px;
+    height: 40px;
 }
